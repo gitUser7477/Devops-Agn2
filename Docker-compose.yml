@@ -1,6 +1,6 @@
 services:
   web:
-    image: YOURDOCKERHUBUSER/student-manager:latest
+    image: hamza7477/student-manager:latest
     container_name: sm-web
     ports:
       - "8081:3000"
