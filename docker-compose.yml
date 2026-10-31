@@ -28,7 +28,7 @@ services:
     volumes:
       - dbdata:/var/lib/mysql
     healthcheck:
-         test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-prootpass123"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-prootpass123"]
       interval: 5s
       timeout: 5s
       retries: 20
