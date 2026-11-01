@@ -25,7 +25,6 @@ pipeline {
     script {
       def email = sh(script: 'git log -1 --pretty=%ae', returnStdout: true).trim()
       def to = email
-      // GitHub hides some people's emails behind a noreply address
       if (email.toLowerCase().endsWith('users.noreply.github.com')) {
         to = email.toLowerCase().contains('gituser7477') ? '' : 'qasimalik@gmail.com'
       }
